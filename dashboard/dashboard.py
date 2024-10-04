@@ -37,8 +37,8 @@ st.write("""
 by Leonard Mars Kurniaputra
 """)
 
-hour_df = load_data('../data/hour.csv')
-day_df = load_data('../data/day.csv')
+hour_df = load_data('./hour.csv')
+day_df = load_data('./day.csv')
 
 count_by_weather_df = hour_df.groupby("weathersit").agg({
     "cnt": "mean",
